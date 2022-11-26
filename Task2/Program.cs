@@ -25,6 +25,6 @@ if (m > n)
 Console.WriteLine();
 
 int result = GetSum(m, n);
-Console.WriteLine(result);
+Console.WriteLine($"Cумма натуральных элементов в промежутке от {m} до {n} = {result}");
 
 Console.ReadKey();

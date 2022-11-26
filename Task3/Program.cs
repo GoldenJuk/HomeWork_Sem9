@@ -26,7 +26,7 @@ Console.WriteLine();
 if (m > 0 && n > 0)
 {
     int result = GetAckermanFunction(m, n);
-    Console.WriteLine(result);
+    Console.WriteLine($"Результат вычисления функции Аккермана для двух неотрицательных чисел {m} и {n} = {result}");
 }
 else Console.WriteLine("Введите неотрицательные числа.");
 
