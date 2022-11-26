@@ -3,8 +3,22 @@
 
 Console.Clear();
 
+void GetListNumber(int number)
+{
+    Console.Write($"{number}, ");
 
+    if (number == 2)
+    {
+        Console.WriteLine("1");
+        return;
+    }
+    GetListNumber(number - 1);
+}
 
+Console.Write("Введите N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
 
+GetListNumber(n);
 
 Console.ReadKey();
