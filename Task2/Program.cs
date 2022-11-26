@@ -17,6 +17,11 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
+if (m > n)
+{
+    int temp = m; m = n; n = temp;
+}
+
 Console.WriteLine();
 
 int result = GetSum(m, n);
